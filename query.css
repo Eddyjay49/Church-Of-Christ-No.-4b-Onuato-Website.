@@ -1,0 +1,236 @@
+/* Responsive Design */
+@media (max-width:61.25rem) {
+  html{
+    font-size:62.5% ;
+  }
+
+  .about-image img{
+    width: 90%;
+    max-width: 300px;
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 48rem) {
+  html {
+    font-size: 56.25%;
+  }
+
+  /* Header */
+
+ .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    color: #000;
+    width: 100%;
+    padding: 2rem 2rem;
+    background: rgba(0,0,0,0.9);
+    text-align: center;
+    flex-direction: column;
+    display: none;
+    opacity: 1.0;
+}
+
+.Hero .hero-content{
+    margin-top: 20rem;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links a {
+    margin: 3rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+  .menu-toggle {
+    display: block;
+    font-size: 2.8rem;
+    color: orange;
+  }
+
+  .menu-toggle:hover{
+    color: #ffffff;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content h2{
+    font-size: 3rem;
+  }
+
+  .hero-content .address{
+    font-size: 1.5rem;
+  }
+
+  .hero-content{
+    margin-bottom: 20rem;
+  }
+
+  section{
+    margin-bottom: 0;
+  }
+
+  /* ABOUT SECTION */
+  .about-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .about-text {
+    font-size: 1.55rem;
+  }
+
+  .about-image {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .about-image img:first-child{
+    display: none;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text h3,
+  .about-text h4 {
+    font-size: 2rem;
+  }
+
+
+  /* ACTIVIRY SECTION */
+  .activity-card img {
+    height: 180px;
+  }
+
+  /* WORK SECTION*/
+   .work-item {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .works-grid-section{
+    margin-bottom: 3rem;
+  }
+
+  .work-item.reverse {
+    flex-direction: column;
+  }
+
+  .work-image img {
+    border-radius: 1rem;
+  }
+
+
+  /* == SALVATION SECTION ==*/
+
+  .salvation { padding: 6.5rem 5%; }
+
+  .salvation h2 { font-size: 2.6rem; }
+
+  .salvation-steps { grid-template-columns: 1fr; }
+
+  .salvation-card { padding: 2rem 1.8rem 1.8rem; }
+
+  .verse { font-size: 1.5rem; }
+
+
+  /* == CONTACT SECTION == */
+  .contact-layout{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-photos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .contact-photos img{ height: 30rem; }
+
+  .contact-section h2{ font-size: 2.6rem; }
+
+  
+  /*== GALLERY SECTION == */
+  .gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .gallery-track {
+    display: flex;
+    width: 100%;
+    gap: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* EACH IMAGE = FULL SCREEN */
+  .gallery-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 1.2rem;
+  }
+
+  /* BUTTONS */
+  .gallery-btn {
+    display: block;
+    font-size: 2rem;
+    padding: 0.8rem 1rem;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+
+  @media (max-width: 36rem) {
+
+    .Hero .hero-content{
+    margin-bottom: 5rem;
+}
+  }
+
+   /* FOOTER SECTION */
+  footer {
+    padding: 5rem 1.5rem 2rem;
+  }
+
+  .footer-content {
+    gap: 3rem;
+  }
+
+  .footer-image img {
+    max-width: 100px;
+  }
+  
+}
+
+
+

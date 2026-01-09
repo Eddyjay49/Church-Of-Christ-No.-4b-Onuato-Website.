@@ -1,0 +1,673 @@
+
+/* Root Setup */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* ---------- FOUNDATION (VERY IMPORTANT) ---------- */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* GLOBAL CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #000;
+}
+
+/* Header Section */
+header.home{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background-color: rgb(12, 12, 12);
+  backdrop-filter: blur(5px);
+}
+
+.logo img {
+  width: 6rem;
+  border-radius: 50%;
+  border: 3px solid #ff7a00;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+/* HERO SECTION */
+
+.Hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('images/mordern.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-bottom: 5rem; */
+  overflow-x: hidden;
+}
+
+
+.Hero .hero-content {
+  margin-top: 5rem;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ff7a00;
+  text-shadow: 0 0 10px black;
+  transition: opacity 0.8s ease;
+  margin-bottom: 1rem;
+}
+
+.hero-content .address {
+  font-size: 1.6rem;
+  color: #F1F1F1;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.hero-content i {
+  color: orange;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  padding: 8rem 2rem;
+  background-color: #ffff;;
+  color: #000;
+  /* margin-bottom: 5rem; */
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff7a00;                   /* bright orange */
+  margin-bottom: 3.5rem;
+}
+
+.about-section .about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+
+.about-text {
+  flex: 1 1 55%;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.about-text h3 {
+  font-size: 2.4rem;
+  color: black;
+  margin-bottom: 1rem;
+  border-left: 4px solid orange;
+  padding-left: 1rem;
+}
+
+.about-text h4 {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  color: #222;
+  border-left: 3px solid orange;
+  padding-left: 0.8rem;
+}
+
+
+.about-text ul li {
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+.about-text p {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Image Section */
+.about-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: fadeIn 1.2s ease;
+
+}
+
+
+/* ===== ACTIVITY SECTION ===== */
+.activity-section {
+  background-color:#000;
+  padding: 8rem 2rem;
+  color: #111;
+  /* margin-bottom: 5rem; */
+}
+
+.activity-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff7a00; /* orange */
+  margin-bottom: 3.5rem;;
+}
+
+.activity-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.activity-card {
+  background-color: #f5f5f5;
+  border-radius: 2.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.activity-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #ff6600;
+}
+
+.activity-card h3 {
+  font-size: 1.9rem;
+  color: #000;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.activity-card p {
+  font-size: 1.6rem;
+  color: #333;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.activity-card strong {
+  color:#ff6600;
+}
+
+.activity-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* WORKS OF THE CHURCH */
+
+.works-grid-section {
+  padding: 8rem 2rem;
+  background-color: #fff;
+  /* margin-bottom: 5rem; */
+  color: #000;
+}
+
+.works-grid-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff7a00; /* orange */
+  margin-bottom: 3.5rem;
+}
+
+.work-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.work-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.work-text {
+  flex: 1;
+}
+
+.work-text h3 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.work-text p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #333;
+  font-weight: 400;
+}
+
+.bible-quote {
+  background: #f9f9f9;
+  padding: 1.6rem;
+  border-left: 6px solid orange;
+  margin-top: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+.bible-quote p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.work-image {
+  flex: 1;
+}
+
+.work-image img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+
+/* ===== SALVATION SECTION ===== */
+.salvation {
+  background: #0b0b0b; /* deep black for seriousness and focus */
+  color: #fff;
+  padding: 8rem 5%;
+}
+
+.salvation h2 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff7a00; /* orange */
+  margin-bottom: 3.5rem;
+}
+
+.salvation-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2.2rem;
+  align-items: stretch;
+}
+
+.salvation-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 1.2rem;
+  padding: 2.2rem 2rem 2rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.salvation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.65);
+}
+
+.step-badge {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.9rem;
+  background: #ff7a00;
+  color: #0b0b0b;
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.salvation-card h3 {
+  font-size: 2.1rem;
+  margin: 0 0 1rem;
+  color: #ffffff;
+}
+
+.verse {
+  font-size: 1.55rem;
+  line-height: 1.65;
+  color: #f2f2f2;
+  margin: 0;
+}
+
+.verse strong {
+  color: #ffcc99;
+}
+
+
+/* ===== CONTACT SECTION ===== */
+
+.contact-section{
+  padding: 8rem 5%;
+  background-color: #000;                 /* black base */
+  color: #fff;
+  /* margin-bottom: 5rem; */
+}
+
+.contact-section h2{
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff7a00;                   /* bright orange */
+  margin-bottom: 3.5rem;
+}
+
+/* layout wrapper (desktop) */
+.contact-layout{
+  display: flex;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* LEFT: details */
+.contact-details{
+  flex: 1 1 38rem;
+  display: grid;
+  gap: 1.6rem;
+}
+
+/* cards */
+.contact-card{
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 1.2rem;
+  padding: 1.8rem 1.6rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+}
+
+.contact-card h3{
+  font-size: 2rem;
+  margin: 0 0 0.8rem;
+  color: #ffffff;
+}
+
+.contact-card p{
+  margin: 0.55rem 0;
+  font-size: 1.6rem;
+  line-height: 1.65;
+  color: #f3f3f3;
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.contact-card .contact-p{
+  margin-top: 0.9rem;
+  color: #ffe6cc;                   /* soft warm white for welcome messages */
+}
+
+.contact-card i{
+  color: #ff7a00;
+  font-size: 1.9rem;
+  margin-top: 0.1rem;
+}
+
+/* RIGHT: photos (desktop) */
+.contact-photos{
+  flex: 1 1 38rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.contact-photos .name{
+  font-size: 2rem;
+  color: #ddd;
+  margin-bottom: 0.4rem;
+}
+
+.contact-photos .name .change{
+  color: #ffe6cc;
+}
+
+.contact-photos img{
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 1.1rem;
+  border: 2px solid rgba(255,255,255,0.22);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.45);
+}
+
+
+
+
+
+/* ===== GALLERY SECTION ===== */
+.gallery-section {
+  padding: 8rem 2rem;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.gallery-section .container{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff7a00; /* orange */
+  margin-bottom: 3.5rem;
+}
+
+.gallery-intro{
+  text-align: center;
+  font-size: 1.6rem;
+  color: #000;
+  max-width: 80rem;
+  margin: 0 auto 3.5rem;
+  line-height: 1.7;
+}
+
+/* Wrapper */
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.item-name{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Track */
+.gallery-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  transition: transform 0.4s ease;
+}
+
+/* Image card */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* nav buttons */
+.gallery-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  border: none;
+  font-size: 3rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.gallery-btn:hover {
+  background: #ff7a00;
+}
+
+.gallery-btn.prev { left: 1rem; }
+.gallery-btn.next { right: 1rem; }
+
+
+/* ===== FOOTER SECTION ===== */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 6rem 2rem 2rem;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+}
+
+/* Main footer content */
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* Footer image */
+.footer-image img {
+  max-width: 120px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #ff7a00;
+  padding: 0.5rem;
+}
+
+/* Address text */
+.footer-address {
+  line-height: 1.8;
+  color: #f5f5f5;
+}
+
+.footer-address strong {
+  color: #ff7a00;
+}
+
+/* Bible verse */
+.footer-bible {
+  line-height: 1.8;
+  font-style: italic;
+  color: #ddd;
+}
+
+.footer-bible strong {
+  color: #ff7a00;
+}
+
+/* ===== Footer bottom ===== */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 4rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ccc;
+}
