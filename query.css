@@ -233,24 +233,25 @@
   }
 
   .hero-content h2 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .hero-content h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 700;
   color: #ff7a00;
   text-shadow: 0 0 10px black;
   transition: opacity 0.8s ease;
-  margin-bottom: 1rem;
+  line-height: 0.95;
+  margin: 0;
 }
 
 .hero-content .address {
+  margin-top: 2rem;
   font-size: 2rem;
   color: #F1F1F1;
-  margin-bottom: 1rem;
   font-weight: 400;
 }
   }
