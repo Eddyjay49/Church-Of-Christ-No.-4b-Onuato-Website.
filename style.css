@@ -7,7 +7,7 @@ html {
 
 /* --- global selector ---*/
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -95,7 +95,6 @@ header.home{
   overflow-x: hidden;
 }
 
-
 .Hero .hero-content {
   margin-top: 5rem;
   text-align: center;
@@ -104,13 +103,13 @@ header.home{
 }
 
 .hero-content h2 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
   color: #ff7a00;
   text-shadow: 0 0 10px black;
@@ -119,14 +118,14 @@ header.home{
 }
 
 .hero-content .address {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #F1F1F1;
   margin-bottom: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .hero-content i {
-  color: orange;
+  color: #ffa500;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -337,10 +336,107 @@ header.home{
   flex: 1;
 }
 
-.work-image img {
+.work-image img{
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+
+/* ================= WORSHIP SECTION ================= */
+.worship-section {
+  padding: 8rem 2rem;
+  background: #fff;
+  color: #000;
+}
+
+.worship-section h2 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ff7a00; /* orange */
+  margin-bottom: 3.5rem;
+}
+
+/* ================= Worship Item ================= */
+.worship-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 8rem;
+}
+
+/* alternate layout like Works section */
+.worship-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* ================= Text================= */
+.worship-text {
+  flex: 1;
+}
+
+.worship-text h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+  color: #ff7a00;
+}
+
+.worship-text p {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #333;
+  font-weight: 400;
+}
+
+/* ================= Image ================= */
+.worship-image {
+  flex: 1;
+}
+
+.worship-image img {
+  width: 100%;
+  max-height: 33rem;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* ================= Video gallery ================= */
+.video-gallery {
+  margin-top: 8rem;
+}
+
+.video-gallery h4 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #ff7a00;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 20rem;
+  border-radius: 0.9rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.video-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.45rem;
+  color: #000;
 }
 
 

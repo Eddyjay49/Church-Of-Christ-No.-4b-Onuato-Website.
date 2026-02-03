@@ -59,15 +59,15 @@
   }
 
   .hero-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 
   .hero-content h2{
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .hero-content .address{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   /* .hero-content{
@@ -222,6 +222,18 @@
     max-width: 100px;
   }
 
+
+  /* WORSHIP SECTION */
+
+  .worship-item,
+  .worship-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media (max-width: 37rem) {
@@ -233,18 +245,20 @@
   }
 
   .hero-content h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .hero-content h1 {
-  font-size: 8rem;
+  margin-top: 2rem;
+  font-size: 7rem;
   font-weight: 700;
   color: #ff7a00;
   text-shadow: 0 0 10px black;
   transition: opacity 0.8s ease;
-  line-height: 0.95;
+  line-height: 1;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -252,7 +266,21 @@
   margin-top: 2rem;
   font-size: 2rem;
   color: #F1F1F1;
-  font-weight: 400;
+  font-weight: 600;
 }
+
+/* Worship */
+ .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-item iframe {
+    height: 18rem;
+  }
+
+  .works-grid-section{
+    margin-bottom: 0%;
+  }
+
   }
 
