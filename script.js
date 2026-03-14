@@ -1,19 +1,21 @@
-// Nav-links
+// setting upp variables
   const menu = document.querySelector(".menu-toggle");
   const icon = document.querySelector(".menu-toggle i");
   const navLinks = document.querySelector(".nav-links");
 
-  menu.onclick = () => {
-  icon.classList.toggle('bx-x');
-  navLinks.classList.toggle('active');
-}
-
-// Gallery section
   const track = document.querySelector(".gallery-track");
   const items = document.querySelectorAll(".gallery-item");
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");
 
+// nav links
+  menu.onclick = () => {
+  icon.classList.toggle('bx-x');
+  navLinks.classList.toggle('active');
+}
+
+
+// Gallery section
   let index = 0;
 
   function updateSlider() {
