@@ -14,7 +14,6 @@
   navLinks.classList.toggle('active');
 }
 
-
 // Gallery section
   let index = 0;
 
